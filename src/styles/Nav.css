@@ -1,0 +1,207 @@
+/* ========================================
+   NAV.CSS - MangaVerse Navigation
+   Tema: Mangas, Libros & Comics
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Bangers&display=swap');
+
+/* ===== BARRA DE NAVEGACION ===== */
+.barraNavegacion {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ===== SECCIONES DEL NAV ===== */
+.navIzquierda {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navDerecha {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.barraBusqueda {
+    padding: 0.5rem 1.2rem;
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.barraBusqueda::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.barraBusqueda:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.contenedorIdioma {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.35rem 0.6rem;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.etiquetaIdioma {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.selectorIdioma {
+    padding: 0.2rem 0.3rem;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.selectorIdioma option {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+/* ===== LOGO ===== */
+.contenedorLogo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contenedorLogo:hover .iconoLogo {
+    animation: acercamiento 1.8s ease;
+}
+
+.iconoLogo {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedorLogo {
+    position: relative;
+}
+
+
+@keyframes acercamiento {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tituloLogo {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(49, 46, 46, 0.3);
+}
+
+.resaltado {
+    background: linear-gradient(135deg, #302628, #302628, #302628);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== LISTA DE ENLACES ===== */
+.listaEnlaces {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.enlaceNav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease;
+}
+
+.enlaceNav:hover {
+    transform: scale(1.08);
+}
+
+.enlaceActivo {
+    color: #fff;
+}
+
+.iconoEnlace {
+    font-size: 1.1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .barraNavegacion {
+        padding: 1rem 1.5rem;
+    }
+
+    .tituloLogo {
+        font-size: 1.5rem;
+    }
+
+    .enlaceNav {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .barraNavegacion {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

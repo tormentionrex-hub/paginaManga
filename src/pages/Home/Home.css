@@ -1,0 +1,401 @@
+/* ========================================
+   HOME.CSS - Página Principal
+   Sección: Artículos más Vendidos
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Bangers&display=swap');
+
+/* ===== PAGINA HOME ===== */
+.paginaHome {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../images/BackgroundManga.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ===== SECCION VENDIDOS ===== */
+.seccionVendidos {
+    padding: 4rem 4rem 5rem;
+    background: rgba(0, 0, 0, 0.527);
+}
+
+.tituloSeccion {
+    font-family: 'Bangers', cursive;
+    font-size: 2.8rem;
+    color: #fff;
+    letter-spacing: 4px;
+    text-align: left;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+    cursor: default;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.tituloSeccion:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes expandirLinea {
+    0% {
+        width: 80px;
+        opacity: 0.6;
+    }
+
+    100% {
+        width: 180px;
+        opacity: 1;
+    }
+}
+
+/* ===== FILA VENDIDOS + REDES ===== */
+.filaVendidos {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.columnaDerecha {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: auto;
+    min-width: 550px;
+}
+
+.panelVideo {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    min-width: 500px;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+.contenedorVideo {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.videoYoutube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ===== CONTENEDOR DE TARJETAS ===== */
+.contenedorTarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 750px;
+    margin: 0;
+}
+
+/* ===== PANEL REDES SOCIALES ===== */
+.panelRedes {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    min-width: 500px;
+    margin-left: auto;
+}
+
+.tituloRedes {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 1.2rem;
+}
+
+.iconosRedes {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.iconoRed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.iconoRed:hover {
+    transform: scale(1.15);
+    background: #fff;
+    outline: none;
+    color: #000;
+}
+
+.iconoRed:visited,
+.iconoRed:active,
+.iconoRed:focus {
+    color: #000;
+    outline: none;
+}
+
+.iconoInstagram,
+.iconoInstagram:hover,
+.iconoInstagram:visited,
+.iconoInstagram:active {
+    color: #e4405f;
+}
+
+.iconoYoutube,
+.iconoYoutube:hover,
+.iconoYoutube:visited,
+.iconoYoutube:active {
+    color: #ff0000;
+}
+
+.iconoDiscord,
+.iconoDiscord:hover,
+.iconoDiscord:visited,
+.iconoDiscord:active {
+    color: #5865f2;
+}
+
+.iconoFacebook,
+.iconoFacebook:hover,
+.iconoFacebook:visited,
+.iconoFacebook:active {
+    color: #00acee;
+}
+
+/* ===== TARJETA ARTICULO ===== */
+.tarjetaArticulo {
+    display: flex;
+    align-items: stretch;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid #181717;
+    transition: all 0.4s ease;
+    min-height: 180px;
+    position: relative;
+}
+
+.tarjetaArticulo:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 8px 30px rgba(53, 51, 52, 0.2), 0 0 15px rgba(200, 80, 192, 0.1);
+    border-left-color: #0500055b;
+}
+
+/* ===== INFORMACION DE LA TARJETA ===== */
+.tarjetaInfo {
+    flex: 1;
+    padding: 2.5rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.etiquetaTiempo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.2rem;
+    background: #e63550;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 0 0 12px 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    z-index: 5;
+}
+
+.tarjetaTitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0.5rem 0 0;
+}
+
+.tarjetaAutor {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.tarjetaEstadistica {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0.5rem 0 0;
+    font-weight: 500;
+}
+
+.tarjetaRanking {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: 0.5rem;
+    letter-spacing: 1px;
+}
+
+/* ===== IMAGEN DE LA TARJETA ===== */
+.tarjetaImagen {
+    width: 420px;
+    min-height: 240px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.imagenArticulo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== TARJETAS HORIZONTALES ===== */
+.tituloStock {
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    max-width: 900px;
+    padding-left: 10rem;
+}
+
+.contenedorHorizontal {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    max-width: 900px;
+}
+
+.tarjetaMini {
+    flex: 1;
+    min-width: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tarjetaMini:hover {
+    transform: scale(1.03);
+}
+
+.tarjetaMiniImagen {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tarjetaMiniImagen .etiquetaTiempo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0 0 8px 0;
+    font-size: 0.65rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.imagenMini {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjetaMiniTitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 0.6rem 0 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tarjetaMiniEstadistica {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.tarjetaMiniRanking {
+    font-weight: 700;
+    color: #fff;
+    margin-right: 0.4rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .seccionVendidos {
+        padding: 3rem 1.5rem;
+    }
+
+    .tituloSeccion {
+        font-size: 1.8rem;
+    }
+
+    .tarjetaArticulo {
+        flex-direction: column;
+    }
+
+    .tarjetaImagen {
+        width: 100%;
+        min-height: 200px;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .tarjetaInfo {
+        padding: 1.5rem;
+    }
+
+    .tarjetaTitulo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccionVendidos {
+        padding: 2rem 1rem;
+    }
+
+    .tituloSeccion {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
