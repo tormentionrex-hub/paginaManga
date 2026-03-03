@@ -1,0 +1,262 @@
+/* ========================================
+   LOGIN.CSS - Página de Inicio de Sesión
+   ======================================== */
+
+.paginaLogin {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../images/BackgroundManga.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* ===== BOTÓN VOLVER ===== */
+.loginBotonVolver {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.8rem 1.4rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.loginBotonVolver:hover {
+    background: #e63550;
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(230, 53, 80, 0.4);
+}
+
+/* ===== CONTENEDOR PRINCIPAL DEL LOGIN ===== */
+.loginContenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 15px rgba(220, 20, 60, 0.2);
+    width: 100%;
+    max-width: 1000px;
+    min-height: 600px;
+}
+
+/* ===== COLUMNA IZQUIERDA (IMAGEN) ===== */
+.loginImagenColumna {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-right: 3px solid #181717;
+}
+
+.loginImagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.loginImagenOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.45) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.loginMangaTitulo {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0 0 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.loginMangaTexto {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== COLUMNA DERECHA (FORMULARIO) ===== */
+.loginFormularioColumna {
+    flex: 1;
+    min-width: 350px;
+    padding: 4rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(10, 10, 10, 0.4);
+}
+
+.loginCabecera {
+    margin-bottom: 2.5rem;
+}
+
+.loginTitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+}
+
+.loginSubtitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.loginEnlace {
+    color: #e63550;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.loginEnlace:hover {
+    color: #ff5c77;
+    text-decoration: underline;
+}
+
+/* ===== FORMULARIO E INPUTS ===== */
+.loginFormulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.loginGrupoInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.loginLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.loginInput:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.loginInput::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.loginOpciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.loginCheckboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.loginCheckbox {
+    accent-color: #e63550;
+    cursor: pointer;
+}
+
+.loginOlvidaste {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+.loginOlvidaste:hover {
+    color: #fff;
+}
+
+/* ===== BOTÓN ===== */
+.loginBoton {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #e63550;
+    color: #fff;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.loginBoton:hover {
+    background: #ff4763;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 53, 80, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .loginContenedor {
+        flex-direction: column;
+    }
+
+    .loginImagenColumna {
+        min-height: 250px;
+        border-right: none;
+        border-bottom: 3px solid #181717;
+    }
+
+    .loginFormularioColumna {
+        padding: 3rem 2rem;
+    }
+}

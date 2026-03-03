@@ -182,6 +182,12 @@
     font-size: 1.1rem;
 }
 
+/* Efecto hover rojo personalizado para cerrar sesión */
+.enlaceCerrarSesion:hover {
+    color: #e63550;
+    transform: scale(1.08);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .barraNavegacion {

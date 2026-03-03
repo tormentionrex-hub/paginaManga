@@ -1,0 +1,16 @@
+{
+  "usuarios": [
+    {
+      "id": "c0d6",
+      "nombre": "Gonzalez",
+      "correo": "tormentionrex@gmail.com",
+      "contrasena": "undertale"
+    },
+    {
+      "id": "7620",
+      "nombre": "Barry",
+      "correo": "Barry@gmail.com",
+      "contrasena": "barry1"
+    }
+  ]
+}
