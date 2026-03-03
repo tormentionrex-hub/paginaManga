@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home'
 import Mangas from '../pages/Mangas/Mangas'
 import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
+import DashboardAdmin from '../pages/Admin/DashboardAdmin'
 
 const Routing = () => {
 
@@ -16,9 +17,11 @@ const Routing = () => {
         <Route path="/mangas" element={<Mangas />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/admin" element={<DashboardAdmin />} />
       </Routes>
     </Router>
   )
+
 }
 
 export default Routing

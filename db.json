@@ -4,13 +4,199 @@
       "id": "c0d6",
       "nombre": "Gonzalez",
       "correo": "tormentionrex@gmail.com",
-      "contrasena": "undertale"
+      "contrasena": "undertale",
+      "rol": "Admin"
     },
     {
       "id": "7620",
       "nombre": "Barry",
       "correo": "Barry@gmail.com",
-      "contrasena": "barry1"
+      "contrasena": "barry1",
+      "rol": "Usuario"
+    }
+  ],
+  "mangas_stock": [
+    {
+      "id": "1",
+      "titulo": "Shumatsu no Valkyrie",
+      "categoria": "Mini 1",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP7mPhdnIzzwOlszWtXoHKhYJKX0ynEO-iSg&s",
+      "ranking": "#040",
+      "vistas": "2.1K",
+      "descripcion": "",
+      "autor": ""
+    },
+    {
+      "id": "2",
+      "titulo": "Frieren",
+      "categoria": "Mini 1",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSlduLeVOq_PQ0KpBetWhtde46uHIWBMyUQ&s",
+      "ranking": "#070",
+      "vistas": "2.8K",
+      "descripcion": "",
+      "autor": ""
+    },
+    {
+      "id": "3",
+      "titulo": "Dr. Stone",
+      "categoria": "Mini 1",
+      "imagen": "https://elmundodeshiro.home.blog/wp-content/uploads/2020/12/elbpzz2xeai-sxw.jpg",
+      "ranking": "#336",
+      "vistas": "15.7K"
+    },
+    {
+      "id": "4",
+      "titulo": "Dragon Ball Super",
+      "categoria": "Mini 1",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LJFqnAE0OGfILyRuewsqhI5sH0GvUMnaqg&s",
+      "ranking": "#1175",
+      "vistas": "2.8K",
+      "descripcion": "Batalals interGalacticas",
+      "autor": ""
+    },
+    {
+      "id": "5",
+      "titulo": "Jujutsu Kaisen",
+      "categoria": "Mini 1",
+      "imagen": "https://www.normaeditorial.com/upload/media/albumes/0001/19/thumb_18612_albumes_medium.jpeg",
+      "ranking": "#024",
+      "vistas": "167.2K"
+    },
+    {
+      "id": "6",
+      "titulo": "Sailor Moon",
+      "categoria": "Carrusel",
+      "imagen": "https://i.pinimg.com/originals/a3/ea/3b/a3ea3bac86a7881c3ad9ef06a4982aee.jpg",
+      "descripcion": "¡Una chica lucha por salvar a su mundo!"
+    },
+    {
+      "id": "7",
+      "titulo": "Mazinger Z",
+      "categoria": "Carrusel",
+      "imagen": "https://i.pinimg.com/736x/d9/31/a1/d931a1e146ba3f523033b8fef4554dd3.jpg",
+      "descripcion": "Un robot gigante lucha por salvar a la humanidad."
+    },
+    {
+      "id": "8",
+      "titulo": "Tenkaichi",
+      "categoria": "Carrusel",
+      "imagen": "https://ramenparados.com/wp-content/uploads/2023/11/tenkaichi-destacado.jpg",
+      "descripcion": "Los mejores luchadores de la historia se enfrentan en un torneo para hacerse con Japon."
+    },
+    {
+      "id": "9",
+      "titulo": "Vagabond",
+      "categoria": "Carrusel",
+      "imagen": "https://i.pinimg.com/1200x/ca/65/00/ca65002426a333c027082a32ae4142a5.jpg",
+      "descripcion": "La historia de Musashi Miyamoto, el mejor espadachín de Japón."
+    },
+    {
+      "id": "10",
+      "titulo": "Monster",
+      "categoria": "Mini 2",
+      "imagen": "https://preview.redd.it/thoughts-on-naoki-urasawas-monster-manga-anime-v0-uvlskkc5y8jc1.png?width=640&crop=smart&auto=webp&s=fd7f6a61e8084e32b6f4cfbb7b9c0dabcb209882",
+      "ranking": "#001",
+      "vistas": "500K"
+    },
+    {
+      "id": "11",
+      "titulo": "Hajime no Ippo",
+      "categoria": "Mini 2",
+      "imagen": "https://www.planetadelibros.cl/usuaris/libros/fotos/385/original/384279_portada_hajime-no-ippo-n-01_jyoji-morikawa_202304190844.jpg",
+      "ranking": "#005",
+      "vistas": "320K",
+      "descripcion": "",
+      "autor": ""
+    },
+    {
+      "id": "12",
+      "titulo": "Neon Genesis Evangelion",
+      "categoria": "Mini 2",
+      "imagen": "https://i5.walmartimages.com/seo/Yoshiyuki-Sadamoto-Neon-Genesis-Evangelion-Book-4-3-in-1-Edition-Paperback_8ecf7a6a-e8c6-4d59-84ce-941b47094c01.65e255965c94d57f8f61ab2bb15cc33c.jpeg",
+      "ranking": "#003",
+      "vistas": "450K"
+    },
+    {
+      "id": "13",
+      "titulo": "Death Note",
+      "categoria": "Mini 2",
+      "imagen": "https://www.ivrea.com.ar/wp-content/uploads/2020/11/deathnote01.jpg",
+      "ranking": "#012",
+      "vistas": "180K"
+    },
+    {
+      "id": "14",
+      "titulo": "Re:Zero",
+      "categoria": "Mini 2",
+      "imagen": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1662778816i/62347228.jpg",
+      "ranking": "#022",
+      "vistas": "120K"
+    },
+    {
+      "id": "15",
+      "titulo": "Mushishi",
+      "categoria": "Popular",
+      "imagen": "https://images.penguinrandomhouse.com/cover/9798888776353",
+      "autor": "Yuki Urushibara",
+      "vistas": "375 720"
+    },
+    {
+      "id": "16",
+      "titulo": "Land of the Lustrous ",
+      "categoria": "Popular",
+      "imagen": "https://prodimage.images-bn.com/pimages/9781632364975_p0_v2_s1200x630.jpg",
+      "autor": "Haruko Ichikawa",
+      "vistas": "350 150"
+    },
+    {
+      "id": "17",
+      "titulo": "Vinland Saga",
+      "categoria": "Popular",
+      "imagen": "https://m.media-amazon.com/images/I/71pI5sI9NjL._AC_UF1000,1000_QL80_.jpg",
+      "autor": "Makoto Yukimura",
+      "vistas": "287 457"
+    },
+    {
+      "id": "18",
+      "titulo": "Blame!",
+      "categoria": "Popular",
+      "imagen": "https://images.penguinrandomhouse.com/cover/9781942993773",
+      "autor": "Tsutomu Nihei",
+      "vistas": "239 787"
+    },
+    {
+      "id": "19",
+      "titulo": "Ajin",
+      "categoria": "Popular",
+      "imagen": "https://m.media-amazon.com/images/I/91axwTfNV-L._AC_UF1000,1000_QL80_.jpg",
+      "autor": "Gamon Sakurai",
+      "vistas": "191 124"
+    },
+    {
+      "id": "20",
+      "titulo": "Oyasumi Punpun",
+      "categoria": "Popular",
+      "imagen": "https://m.media-amazon.com/images/I/917IJDfk36L._AC_UF1000,1000_QL80_.jpg",
+      "autor": "Inio Asano",
+      "vistas": "133 498"
+    },
+    {
+      "id": "21",
+      "titulo": "Gachiakuta",
+      "categoria": "Popular",
+      "imagen": "https://preview.redd.it/gachiakuta-volume-11-cover-v0-yse18wbz4z3d1.jpeg?width=640&crop=smart&auto=webp&s=760f9e98915cd839d21cf51a0e887deda5f85d01",
+      "autor": "Kei Urana",
+      "vistas": "123 120"
+    },
+    {
+      "id": "6d4d",
+      "titulo": "Nana",
+      "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/75/c3/75c3bf22ca392db40cd62ce2dc7f70e8.jpg",
+      "categoria": "Yuri",
+      "ranking": "#020",
+      "vistas": "141.6K",
+      "descripcion": "",
+      "autor": ""
     }
   ]
 }

@@ -28,7 +28,8 @@ function Register() {
         const usuarioNuevo = {
             nombre: nombre,
             correo: correo,
-            contrasena: contrasena
+            contrasena: contrasena,
+            rol: "Usuario"
         };
 
         // Guardar en la base de datos

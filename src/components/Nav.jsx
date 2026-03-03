@@ -67,6 +67,14 @@ function Nav() {
               Mangas
             </Link>
           </li>
+          {usuarioDato && usuarioDato.rol === "Admin" && (
+            <li>
+              <Link to="/admin" className="enlaceNav">
+                <span className="iconoEnlace"></span>
+                Dashboard Admin
+              </Link>
+            </li>
+          )}
           {usuarioDato ? (
             <li>
               <a href="#" onClick={cerrarSesion} className="enlaceNav enlaceCerrarSesion">

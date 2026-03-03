@@ -1,0 +1,361 @@
+/* ========================================
+   DASHBOARD ADMIN CSS - Inspirado en Login/Register
+   ======================================== */
+.paginaAdmin {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../images/BackgroundManga.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem 2rem 2rem;
+    /* padding superior para no chocar con el navbar */
+}
+
+/* ===== BOTÓN VOLVER ===== */
+.adminBotonVolver {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.8rem 1.4rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.adminBotonVolver:hover {
+    background: #e63550;
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(230, 53, 80, 0.4);
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.adminContenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 15px rgba(220, 20, 60, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+}
+
+/* ===== TABS MENÚ ===== */
+.adminTabsContenedor {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.adminTabsMenu {
+    display: flex;
+    gap: 1rem;
+}
+
+.adminTabBtn {
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.adminTabBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.adminTabBtn.active {
+    background: #e63550;
+    color: #fff;
+    border-color: #e63550;
+    box-shadow: 0 4px 15px rgba(230, 53, 80, 0.4);
+}
+
+/* ===== COLUMNA FORMULARIO ===== */
+.adminFormularioColumna {
+    flex: 1;
+    min-width: 350px;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.4);
+    border-right: 3px solid #181717;
+}
+
+.adminCabecera {
+    margin-bottom: 2rem;
+}
+
+.adminTitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+}
+
+.adminSubtitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+/* ===== FORMULARIO E INPUTS ===== */
+.adminFormulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.adminGrupoInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.adminLabel {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+.adminInput,
+.adminSelect {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.adminSelect option {
+    background-color: #181717;
+    color: #fff;
+}
+
+.adminInput:focus,
+.adminSelect:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.adminInput::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== BOTONES ===== */
+.adminOpciones {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adminBoton {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #e63550;
+    color: #fff;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.adminBoton:hover {
+    background: #ff4763;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 53, 80, 0.4);
+}
+
+.adminBotonSecundario {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.adminBotonSecundario:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== COLUMNA LISTA USUARIOS ===== */
+.adminListaColumna {
+    flex: 1.5;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.adminListaTitulo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+}
+
+/* ===== TABLA ===== */
+.adminTabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+}
+
+.adminTabla th,
+.adminTabla td {
+    padding: 1rem;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.adminTabla th {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.adminTabla td {
+    font-size: 0.95rem;
+    background-color: transparent;
+}
+
+.adminAccionesTabla {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+/* ===== BOTONES DE ACCIÓN (ICONOS) ===== */
+.btn-accion {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+/* Efecto sombra de texto (Tooltip) */
+.btn-accion::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-accion:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: 130%;
+    /* sube un poquito más */
+}
+
+/* Botón Editar: Azul */
+.btn-editar {
+    background-color: #007bff;
+    /* Azul vibrante estilo primary */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón Eliminar: Rojo */
+.btn-eliminar {
+    background-color: #dc3545;
+    /* Rojo peligro */
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.5);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .adminContenedor {
+        flex-direction: column;
+    }
+
+    .adminFormularioColumna {
+        border-right: none;
+        border-bottom: 3px solid #181717;
+    }
+}
