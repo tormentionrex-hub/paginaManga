@@ -60,7 +60,7 @@ function Home() {
 
           <div className="columnaDerecha">
             <div className="panelRedes">
-              <h3 className="tituloRedes">Official SNS Accounts</h3>
+              <h3 className="tituloRedes">Nuestras Redes Sociales Oficiales</h3>
               <div className="iconosRedes">
                 <a href="#" className="iconoRed"><i className="fa-brands fa-x-twitter"></i></a>
                 <a href="#" className="iconoRed iconoInstagram"><i className="fa-brands fa-instagram"></i></a>
@@ -71,12 +71,25 @@ function Home() {
             </div>
 
             <div className="panelVideo">
-              <h3 className="tituloRedes"> Shuumatsu no Valkyrie captiulo 112</h3>
+              <h3 className="tituloRedes"> Shuumatsu no Valkyrie captiulo 115</h3>
               <div className="contenedorVideo">
                 <iframe
                   className="videoYoutube"
-                  src="https://www.youtube.com/embed/RUk5WbFnVME"
-                  title="Trailer Manga"
+                  src="https://www.youtube.com/embed/f4cTtt4hoi4"
+                  title="Shuumatsu no Valkyrie captiulo 115"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div className="panelVideo">
+              <h3 className="tituloRedes"> Tenkaichi 8vos Captiulo 57: Final del 8vo combate</h3>
+              <div className="contenedorVideo">
+                <iframe
+                  className="videoYoutube"
+                  src="https://www.youtube.com/embed/6sNU9TWc5YA"
+                  title="Tenkaichi 8vos Captiulo 57: Final del 8vo combate"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
